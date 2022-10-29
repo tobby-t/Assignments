@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="log.css">
+</head>
+<body>
+    <header>
+        <nav>
+            
+            <a href="log.html">Login</a>
+            <a href="index.html">Registration</a>
+        </nav>
+    </header>
+    <main>
+        <div class="sidenote">
+            <p>
+                LIVE. LEARN. LOVE.
+            </p>
+        </div>
+        <div class="regform">
+            <h1>LOGIN</h1>
+            <form>
+                <table>
+                    <tr>
+                        <tr>
+                            <td><label for="email">Email Address:</label></td>
+                           
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input
+                                type="email"
+                                placeholder="Enter a valid Email"
+                                name="email"
+                                id="email"
+                                title="Enter a valid email."
+                                required
+                                /></td>
+                        </tr>
+                    </tr>
+                    <tr>
+                        <tr>
+                            <td><label for="password">Password:</label></td>
+                           
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input
+                                type="password"
+                                placeholder="Password should be between 8-16 characters"
+                                name="password"
+                                minlength="8"
+                                maxlength="16"
+                                id="password"
+                                required
+                                /></td>
+                        </tr>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="2"><input type="submit" formaction="success.html" id="login" value="Login" /></td>
+                    </tr>
+            </form>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>

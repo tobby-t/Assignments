@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            
+            <a href="log.html">Login</a>
+            <a href="index.html">Registration</a>
+        </nav>
+    </header>
+    <main>
+        <div class="sidenote">
+            <p>
+                LIVE. LEARN. LOVE.
+            </p>
+        </div>
+        <div class="regform">
+            <h1>REGISTRATION FORM</h1>
+            <form>
+                <table>
+                    <tr>
+                        <tr>
+                            <td><label for="fname">First Name:</label></td>
+                            <td><label for="lname">Last Name:</label></td>
+                        </tr>
+                
+                        <tr>
+                            <td><input
+                                type="text"
+                                name="fname"
+                                id="fname"
+                                placeholder="Your first name"
+                                minlength="3"
+                                maxlength="26"
+                                required
+                            /></td>
+                            <td><input 
+                                type="text"
+                                name="lname"
+                                id="lname"
+                                placeholder="Your last name"
+                                minlength="3"
+                                maxlength="26"
+                                required
+                                /></td>
+                        </tr>
+                    </tr>
+                    <tr>
+                        <tr>
+                            <td><label for="phone">Phone Number:</label></td>
+                            <td><label for="gender">Gender:</label></td>
+                                
+                        </tr>
+                        <tr>
+                            <td><input
+                                type="tel"
+                                name="phone"
+                                id="phone"
+                                placeholder="0801-123-4567"
+                                pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"
+                                required /></td>
+                            <td><select name="gender" id="gender" required>
+                                <option value="0">-- Select Gender --</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="N/A">N/A</option>
+                                </select></td>
+                                
+                        </tr>
+                    </tr>
+                    <tr>
+                        <tr>
+                            <td><label for="email">Email Address:</label></td>
+                           
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input
+                                type="email"
+                                placeholder="Enter Email"
+                                name="email"
+                                id="email"
+                                title="Enter a valid email."
+                                required
+                                /></td>
+                        </tr>
+                    </tr>
+                    <tr>
+                        <tr>
+                            <td><label for="D.O.B">Date Of Birth:</label></td>
+                            <td><label for="favcolor">Favourite Color:</label></td>
+                           
+                        </tr>
+                        <tr>
+                            <td><input
+                                type="date"
+                                name="dob"
+                                id="dob"
+                                required
+                                /></td>
+                                <td><input type="color" id="favcolor" name="favcolor" value="#DDA0DD" required></td>
+                        </tr>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" formaction="success.html" id="register" value="Register" /></td>
+                    </tr>
+            </form>
+        </div>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
